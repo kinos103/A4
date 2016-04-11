@@ -1,5 +1,6 @@
 #include <iostream>
 
+template <class T>
 class Queue
 {
 
@@ -8,9 +9,9 @@ class Queue
     Queue(int maxSize);
     ~Queue();
 
-    void insert(char data);
-    char remove();
-    char peek();
+    void insert(T data);
+    T remove();
+    T peek();
     int isFull();
     int isEmpty();
     int head;
@@ -18,6 +19,6 @@ class Queue
     int mSize;
     int numElements;
     int getSize();
-    char *myQueue;
+    T *myQueue;
 
 };
